@@ -379,7 +379,7 @@ export const FirmsManager: React.FC<FirmsManagerProps> = ({
           onClick={openAdd}
           id="btn-add-new-firm"
           title="Přidat novou firmu"
-          className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-40 bg-blue-600 hover:bg-blue-500 text-white font-black p-4 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center justify-center gap-2 transition-all active:scale-90 cursor-pointer border-2 border-blue-400/40"
+          className="fixed bottom-fab-position right-4 sm:bottom-8 sm:right-8 z-40 bg-blue-600 hover:bg-blue-500 text-white font-black p-4 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center justify-center gap-2 transition-all active:scale-90 cursor-pointer border-2 border-blue-400/40"
         >
           <Plus className="w-6 h-6 stroke-[3]" />
           <span className="hidden sm:inline text-sm font-bold">Přidat firmu</span>

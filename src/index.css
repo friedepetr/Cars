@@ -8,6 +8,17 @@
   .animate-pulse-subtle {
     animation: pulseSubtle 3s ease-in-out infinite;
   }
+
+  /* Safe area helpers for mobile / APK packaging */
+  .pb-safe-bottom {
+    padding-bottom: max(0.85rem, env(safe-area-inset-bottom, 0.85rem));
+  }
+  .pt-safe-top {
+    padding-top: max(0.75rem, env(safe-area-inset-top, 0.75rem));
+  }
+  .bottom-fab-position {
+    bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 /* Custom smooth dark scrollbar */
@@ -25,3 +36,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #475569;
 }
+
+/* Mobile viewport fix preventing unwanted touch scrolling over edges */
+html, body {
+  overscroll-behavior-y: none;
+  touch-action: manipulation;
+}
+

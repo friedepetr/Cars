@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       {/* Top Header Bar */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-sky-100 px-3 sm:px-5 py-3 shadow-xs">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-sky-100 px-3 sm:px-5 pt-safe-top pb-3 shadow-xs">
         <div className="max-w-5xl mx-auto flex items-center justify-between gap-2">
           <div className="flex items-center gap-2.5 sm:gap-3 cursor-pointer min-w-0" onClick={() => onSelectTab('start')}>
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-blue-600 via-sky-500 to-blue-700 flex items-center justify-center text-white font-black shadow-md shadow-blue-500/25 shrink-0 active:scale-95 transition-transform">
@@ -154,7 +154,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       </nav>
 
       {/* Touch-Friendly Bottom Mobile Navigation Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-sky-100 px-1 py-1.5 shadow-lg shadow-blue-950/5">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-lg border-t border-slate-200 px-1 pt-2 pb-safe-bottom shadow-2xl shadow-slate-900/20">
         <div className="grid grid-cols-5 gap-1 max-w-md mx-auto">
           <button
             type="button"

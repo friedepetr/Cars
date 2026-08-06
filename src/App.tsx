@@ -200,7 +200,7 @@ export default function App() {
   const completedTripsCount = trips.filter((t) => t.status === 'completed').length;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-sky-50/40 to-slate-100 text-slate-900 flex flex-col font-sans pb-24 md:pb-8 overflow-x-hidden max-w-full">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-sky-50/40 to-slate-100 text-slate-900 flex flex-col font-sans pb-32 md:pb-8 overflow-x-hidden max-w-full">
       {/* Navigation Bar */}
       <Navbar
         activeTab={activeTab}
